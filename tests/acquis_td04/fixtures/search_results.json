@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "origin": "TD03",
+  "topic": "Utilisation des LLM pour assister le screening des SLR en génie logiciel",
+  "created_at": "2026-10-12T08:00:00Z",
+  "pedagogical_fixture": true,
+  "note": "Artefact prérempli pour rendre le TD04 autonome. Dans le projet final, il doit être généré automatiquement par le TD03.",
+  "search": {
+    "queries": {
+      "openalex": "(systematic review screening AND large language models)",
+      "crossref": "(study selection AND LLM)",
+      "semantic_scholar": "(title abstract screening AND generative AI)"
+    },
+    "sources_attempted": ["openalex", "crossref", "semantic_scholar"],
+    "stop_reason": "workflow_complete",
+    "raw_results": 8,
+    "unique_results": 5
+  },
+  "papers": [
+    {
+      "id": "P01",
+      "title": "Large language models for systematic review screening",
+      "abstract": "Evaluation of recall and human oversight in software engineering SLR screening.",
+      "doi": "10.1000/slr.001",
+      "source": "semantic_scholar",
+      "url": "https://example.org/p01",
+      "open_access": true
+    },
+    {
+      "id": "P02",
+      "title": "Human oversight in evidence selection",
+      "abstract": "Human review resolves ambiguous automated study-selection decisions.",
+      "doi": "10.1000/slr.002",
+      "source": "crossref",
+      "url": "https://example.org/p02",
+      "open_access": false
+    },
+    {
+      "id": "P03",
+      "title": "Agentic evidence synthesis",
+      "abstract": "Search, screening, extraction and writing agents collaborate in an SLR workflow.",
+      "doi": "10.1000/slr.003",
+      "source": "semantic_scholar",
+      "url": "https://example.org/p03",
+      "open_access": true
+    },
+    {
+      "id": "P04",
+      "title": "Systematic review screening outside medicine",
+      "abstract": "This work does not concern medicine or a clinical trial; it evaluates LLM-assisted SLR screening in software engineering.",
+      "doi": "10.1000/slr.004",
+      "source": "openalex",
+      "url": "https://example.org/p04",
+      "open_access": true
+    },
+    {
+      "id": "P05",
+      "title": "Automated evidence selection",
+      "abstract": "",
+      "doi": "10.1000/slr.005",
+      "source": "crossref",
+      "url": "https://example.org/p05",
+      "open_access": false
+    }
+  ]
+}

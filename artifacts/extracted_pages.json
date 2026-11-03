@@ -1,0 +1,11 @@
+{
+  "doc_W4410000915":[
+    "Large language models can classify titles and abstracts with zero-shot and few-shot prompting strategies according to predefined eligibility criteria.",
+    "Human oversight remains important for rigorous quality control, reproducibility, cost management and prompt refinement."
+  ],
+  "doc_W4402635906":[
+    "The experiment compared standard input-output prompting, zero-shot chain of thought, few-shot chain of thought and majority voting.",
+    "Recall was 0.82 for input-output, 0.97 for zero-shot chain of thought, and 1.0 for few-shot chain of thought and majority voting.",
+    "Majority voting improves robustness by reducing stochastic variability, but it requires multiple LLM calls and therefore increases cost and latency."
+  ]
+}

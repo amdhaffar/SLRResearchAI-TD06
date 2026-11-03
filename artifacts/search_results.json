@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "origin": "TD03",
+  "topic": "Utilisation des LLM pour assister le screening des SLR",
+  "papers": [
+    {
+      "id": "W4410813691",
+      "title": "Do it faster with PICOS: Generative AI-Assisted systematic review screening",
+      "abstract": "",
+      "doi": "https://doi.org/10.1016/j.jbi.2025.104860",
+      "source": "openalex",
+      "url": "https://doi.org/10.1016/j.jbi.2025.104860",
+      "open_access": false
+    },
+    {
+      "id": "W4410000915",
+      "title": "Large Language Models in Systematic Review Screening: Opportunities, Challenges, and Methodological Considerations",
+      "abstract": "LLM pipelines can classify abstracts with zero-shot or few-shot prompts and require human oversight.",
+      "doi": "https://doi.org/10.3390/info16050378",
+      "source": "openalex",
+      "url": "https://www.mdpi.com/2078-2489/16/5/378/pdf",
+      "open_access": true
+    },
+    {
+      "id": "W4402635906",
+      "title": "Leveraging large language models for systematic reviewing: a case study",
+      "abstract": "The study compares prompting strategies and reports recall, precision, cost and processing time.",
+      "doi": "https://doi.org/10.1101/2024.09.18.24313828",
+      "source": "openalex",
+      "url": "https://www.medrxiv.org/content/10.1101/2024.09.18.24313828v1.full.pdf",
+      "open_access": true
+    }
+  ]
+}
+

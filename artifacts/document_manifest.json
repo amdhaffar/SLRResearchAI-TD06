@@ -1,0 +1,11 @@
+{
+  "schema_version":"1.0",
+  "origin":"DOCUMENT_PREPARATION",
+  "source_artifact":"screening_decisions.json",
+  "pedagogical_fixture":true,
+  "documents":[
+    {"paper_id":"W4410000915","status":"downloaded","source_url":"https://www.mdpi.com/2078-2489/16/5/378/pdf","extracted_pages_key":"doc_W4410000915"},
+    {"paper_id":"W4402635906","status":"downloaded","source_url":"https://www.medrxiv.org/content/10.1101/2024.09.18.24313828v1.full.pdf","extracted_pages_key":"doc_W4402635906"}
+  ]
+}
+

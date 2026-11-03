@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.1",
+  "origin": "TD06_PROTOCOL",
+  "source_artifacts": [
+    "search_results.json",
+    "screening_decisions.json",
+    "document_manifest.json",
+    "extracted_pages.json",
+    "rag_evaluation.json"
+  ],
+  "cases": [
+    {
+      "id": "Q1",
+      "label": "Rappel rapporté selon les stratégies",
+      "question": "Quels niveaux de rappel sont rapportés selon les stratégies ?",
+      "pedagogical_goal": "Observer comment l'agent récupère une preuve numérique anglaise à partir d'une question française.",
+      "expected_behavior": "Le lexical peut manquer la preuve ; l'agent cible alors les valeurs de rappel avec le retrieval sémantique.",
+      "facets": [
+        {
+          "id": "recall_values",
+          "label": "Valeurs de recall",
+          "keywords": ["recall was", "0.82", "0.97"],
+          "query_hint": "recall values prompting strategies"
+        }
+      ],
+      "relevant_chunk_ids": ["W4402635906_p2_c1"],
+      "baseline_tool": "lexical",
+      "baseline_k": 1
+    },
+    {
+      "id": "Q2",
+      "label": "Nécessité de la supervision humaine",
+      "question": "Pourquoi une supervision humaine reste-t-elle nécessaire ?",
+      "pedagogical_goal": "Observer comment l'agent reformule une demande conceptuelle lorsque le vocabulaire français et anglais diffère.",
+      "expected_behavior": "Si le lexical ne couvre pas la facette, l'agent reformule et tente un retrieval sémantique.",
+      "facets": [
+        {
+          "id": "human_oversight",
+          "label": "Raisons de la supervision humaine",
+          "keywords": ["human oversight", "quality control", "reproducibility"],
+          "query_hint": "human oversight quality control reproducibility"
+        }
+      ],
+      "relevant_chunk_ids": ["W4410000915_p2_c1"],
+      "baseline_tool": "lexical",
+      "baseline_k": 1
+    },
+    {
+      "id": "Q3",
+      "label": "Stratégies de prompting comparées",
+      "question": "Quelles stratégies de prompting ont été comparées ?",
+      "pedagogical_goal": "Vérifier la couverture de plusieurs éléments attendus avant d'autoriser la réponse.",
+      "expected_behavior": "L'agent poursuit la recherche tant que toutes les familles de stratégies ne sont pas étayées.",
+      "facets": [
+        {
+          "id": "input_output",
+          "label": "Prompting entrée-sortie",
+          "keywords": ["standard input-output"],
+          "query_hint": "standard input-output prompting"
+        },
+        {
+          "id": "chain_of_thought",
+          "label": "Chain-of-thought",
+          "keywords": ["zero-shot chain of thought", "few-shot chain of thought"],
+          "query_hint": "zero-shot chain of thought few-shot chain of thought"
+        },
+        {
+          "id": "majority_voting",
+          "label": "Vote majoritaire",
+          "keywords": ["majority voting"],
+          "query_hint": "majority voting prompting"
+        }
+      ],
+      "relevant_chunk_ids": ["W4402635906_p1_c1"],
+      "baseline_tool": "lexical",
+      "baseline_k": 1
+    }
+  ]
+}

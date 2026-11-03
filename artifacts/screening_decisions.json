@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "origin": "TD04",
+  "source_artifact": "search_results.json",
+  "decisions": [
+    {"paper_id":"W4410813691","final_decision":"exclude","decided_by":"human","reason":"Résumé absent : exclusion pédagogique après vérification humaine."},
+    {"paper_id":"W4410000915","final_decision":"include","decided_by":"human","reason":"Étude directement liée au screening des SLR par LLM."},
+    {"paper_id":"W4402635906","final_decision":"include","decided_by":"human","reason":"Évaluation empirique de stratégies LLM pour la sélection d'études."}
+  ]
+}
+

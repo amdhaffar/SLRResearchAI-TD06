@@ -1,0 +1,8 @@
+{
+  "questions":[
+    {"id":"Q1","question":"Quels niveaux de rappel sont rapportés selon les stratégies ?","relevant_chunk_ids":["W4402635906_p2_c1"]},
+    {"id":"Q2","question":"Pourquoi une supervision humaine reste-t-elle nécessaire ?","relevant_chunk_ids":["W4410000915_p2_c1"]},
+    {"id":"Q3","question":"Quelles stratégies de prompting ont été comparées ?","relevant_chunk_ids":["W4402635906_p1_c1"]}
+  ]
+}
+
